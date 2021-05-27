@@ -17,8 +17,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 import environ
 
-env = environ.Env(
-)
+env = environ.Env()
 # reading .env file
 environ.Env.read_env()
 # Quick-start development settings - unsuitable for production
@@ -29,7 +28,7 @@ SECRET_KEY = env.str('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool('DEBUG')
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', '127.17.0.2', 'localhost']
 
 # Application definition
 THIRD_PARTY_APP = [
@@ -99,7 +98,7 @@ DATABASES = {
         'HOST': env.str('DB_HOST'),
         'NAME': env.str('DB_NAME'),
         'USER': env.str('DB_USERNAME'),
-        'PASSWORD': env.str('DB_PASSWORD'),
+        'PASSWORD': env.str('DB_PASSWORD')
     }
 }
 
