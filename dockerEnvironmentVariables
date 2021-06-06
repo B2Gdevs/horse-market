@@ -1,0 +1,22 @@
+// Docker environment variables needed for django
+
+DJANGO_SUPERUSER_USERNAME=bgarrard
+DJANGO_SUPERUSER_PASSWORD=SuperSecret
+DJANGO_SUPERUSER_EMAIL=benjamingarrard5279@gmail.com
+
+DB_HOST={when available, change to postgresDockerHost address}
+DB_NAME=HorseMarket
+DB_USERNAME= bgarrard
+DB_PASSWORD=SuperSecret
+DB_PORT=5432
+
+DEBUG=True
+SECRET_KEY=#6**^x6-sis+l*)@i%4g7%30#x+uzi*s%kqinxjm%ryz!2!#mm
+
+STRIPE_API_KEY=sk_test_51Irqt8EWMCBgmApCyKCKDaUDd77UyKTcAVXym3Zk3gQ9Ww2Kzs0UEu0zxTxoSnzSQZdwflvKS3Udici508pzalyF00SBnVlDK4
+STRIPE_PRICE_ID=price_1IreHiAs8szmS3BIY1HIo7xu
+
+
+OAUTH2CLINET_ID=fGJIrResOWQhfceJyoaLi1q1cq2gzDg2ncnaCeoW
+OAUTH2CLIENT_SECRET=FUds1a1P3X3A5MW5wzH9z7qEvCn8VZF4D00BdJb1vAEBOsHIACSElJE3hjRlT8rU2a8TXYu3UZrG6XQaj1rclzBi8EikaBMmE0ojLSXroUiYdubv54E09Ar8sST47QQe
+OAUTH2APP_NAME=Horse App
